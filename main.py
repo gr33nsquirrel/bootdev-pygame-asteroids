@@ -23,10 +23,13 @@ def main():
                 return
         
         screen.fill("black")
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000
+
+        print("Loop tick, dt =", dt)
 
 if __name__ == "__main__":
     main()
