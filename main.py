@@ -29,8 +29,6 @@ def main():
 
         dt = clock.tick(60) / 1000
 
-        print("Loop tick, dt =", dt)
-
 if __name__ == "__main__":
     main()
 
